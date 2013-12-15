@@ -21,7 +21,7 @@ public /*abstract*/ class Employe extends Personne{
         
         if(calculAge() < 16 || calculAge() > 65 )
 		{	
-			throw new EmbaucheException();
+			throw new EmbaucheException(nom, prenom, date);
 		}
 		else
 		{
